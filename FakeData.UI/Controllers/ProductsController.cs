@@ -7,6 +7,7 @@ using System.Net;
 using System.Web;
 using System.Web.Mvc;
 using FakeData.DataAccessLayer.Context;
+using FakeData.GridMvc;
 using FakeData.Model.Models;
 
 namespace FakeData.UI.Controllers
@@ -17,8 +18,21 @@ namespace FakeData.UI.Controllers
 
         // GET: Products
         public ActionResult Index()
+        
         {
-            return View(db.Products.ToList());
+
+            var items = db.Products.ToList().Select(i => new Product
+            {
+                Category=new Category{ID=i.Category.ID},
+                ID = i.ID,
+                Name = i.Name,
+                Price = i.Price,
+                Stock = i.Stock
+            });
+
+            //var foo = new FooGrid<Product>(items);
+
+            return View(items);
         }
 
         // GET: Products/Details/5
@@ -116,13 +130,6 @@ namespace FakeData.UI.Controllers
             return RedirectToAction("Index");
         }
 
-        protected override void Dispose(bool disposing)
-        {
-            if (disposing)
-            {
-                db.Dispose();
-            }
-            base.Dispose(disposing);
-        }
+
     }
 }

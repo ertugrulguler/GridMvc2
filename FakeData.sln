@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeData.DataAccessLayer", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeData.UI", "FakeData.UI\FakeData.UI.csproj", "{0D8E132B-0470-4DEC-A9D2-1B74CFA9DCEF}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FakeData.GridMvc", "FakeData.GridMvc\FakeData.GridMvc.csproj", "{AD2B06B9-171E-42CD-BC76-A6E78FE86DB3}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{0D8E132B-0470-4DEC-A9D2-1B74CFA9DCEF}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0D8E132B-0470-4DEC-A9D2-1B74CFA9DCEF}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0D8E132B-0470-4DEC-A9D2-1B74CFA9DCEF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD2B06B9-171E-42CD-BC76-A6E78FE86DB3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD2B06B9-171E-42CD-BC76-A6E78FE86DB3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD2B06B9-171E-42CD-BC76-A6E78FE86DB3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD2B06B9-171E-42CD-BC76-A6E78FE86DB3}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

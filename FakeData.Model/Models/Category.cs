@@ -8,6 +8,7 @@ namespace FakeData.Model.Models
 {
     public class Category:MyBaseClass
     {
+        
         public List<Product> Products { get; set; }
     }
 }
